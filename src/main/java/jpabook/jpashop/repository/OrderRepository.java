@@ -60,7 +60,7 @@ public class OrderRepository {
 
     //두번째 검색 방법
     //jpql표준 - 권장 X
-    public List<Order> findAllByCriteria(OrderSearch orderSearch){
-
-    }
+//    public List<Order> findAllByCriteria(OrderSearch orderSearch){
+//
+//    }
 }
