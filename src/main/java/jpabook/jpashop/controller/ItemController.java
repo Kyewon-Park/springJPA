@@ -71,8 +71,8 @@ public class ItemController {
 //
 //        itemService.saveItem(book);
 
-        itemService.updateItem(form.getId());
+        itemService.updateItem(form.getId(),form.getName(),form.getPrice(),form.getStockQuantity());
 
-        return "redirect:items";
+        return "redirect:/items";
     }
 }

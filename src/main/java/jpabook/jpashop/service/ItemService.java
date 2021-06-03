@@ -28,9 +28,9 @@ public class ItemService {
     }
 
     @Transactional //변경감지.
-    public void updateItem(Long itemId){
+    public void updateItem(Long itemId, String name, int price, int stockQuantity){
         Item findItem = itemRepository.findOne(itemId);
-        findItem.change(findItem.getName(), findItem.getPrice(), findItem.getStockQuantity());
+        findItem.change(name, price,stockQuantity);
     }
 
     public List<Item> findItems(){
